@@ -26,9 +26,8 @@
     </header> -->
     <main>
         <div class="blob"></div>
-        <div class="wrapper">
-            <form action="#" class="form">
-                <h2>Registration | Oikotaan 8</h2>
+        <div class="fixed-header">
+            <h2>Registration | Oikotaan 8</h2>
                 <!-- Progress bar -->
                 <div class="prog">
                     <div class="progressbar">
@@ -38,46 +37,18 @@
                         <div class="progress-step" data-title="Upload"></div>
                     </div>
                 </div>
-
+        </div>
+        <div class="wrapper">
+            <form action="#" class="form">
                 <!--Steps-->
                 <div class="form-box form-box-active intro">
-                    <!-- <div class="submission">
-                    <h3>Submission Criterion : </h3>
-                    <ol>
-                        <li>
-                            All the compositions must be original (Includes lyrics, music). Imitation of any kind of
-                            popular tracks, artists will not be allowed.
-                        </li>
-                        <li>
-                            There will be no barrier in making the composition with respect to genre & language.
-                            Compositions may be done solo or in a group. It may be a song or a pure instrumental one.
-                        </li>
-                        <li>
-                            The overall composition should not exceed 10 minutes.
-                        </li>
-                        <li>Deep thinking in making the lyrics and music will be encouraged.</li>
-                        <li>
-                            Use of unparliamentary phrases and direct political indication in the lyrics will not be
-                            allowed.
-                        </li>
-                        <li>A group will contain maximum 10 members.</li>
-                        <li>A group or an individual can submit only one composition.</li>
-                        <li>The submitted song should be the same as the one being performed in the event.</li>
-
-                    </ol>
-                </div> -->
                     <div class="input-box">
+                        <legend class="edit-legend">Enter your Email</legend>
                         <span class="icon"><ion-icon name="mail"></ion-icon></span>
-                        <input type="email" class="input-field" required value placeholder="Email ID*" name="email">
+                        <input type="email" class="input-field" required value placeholder="john@abc.com*" name="email">
                         <!-- <label for="">Email</label> -->
                     </div>
                     </br>
-                    <!-- <div class="remember-forget">
-                    <label for="">
-                        <input type="checkbox" required>
-                        I confirm that I am below 30 years old.*</label>
-                </div> -->
-
                     <div class="register-link">
                         <p>Don't know the rules? <a
                                 href="https://drive.google.com/file/d/1CpAfXsB9_KpthcsJG61klIVTHjIXxkQJ/view?usp=sharing"
@@ -91,14 +62,28 @@
                 </div>
 
                 <div class="form-box personal">
-                    <div class="remember-forget input-field">
+                    <!-- <div class="remember-forget input-field">
                         <legend>You are: *</legend>
                         <label for="band"><input id="band" type="radio" name="band-type" class="inline" checked /> A
                             Band</label>
                         <label for="Individual"><input id="individual" type="radio" name="band-type" class="inline" />
                             An
                             Individual</label>
+                    </div> -->
+                    <div class="remember-forget choice-box">
+                        <span class="choice-label">You are: *</span>
+
+                        <label class="radio-pill">
+                            <input id="band" type="radio" name="band-type" checked />
+                            <span>A Band</span>
+                        </label>
+
+                        <label class="radio-pill">
+                            <input id="individual" type="radio" name="band-type" />
+                            <span>An Individual</span>
+                        </label>
                     </div>
+
 
                     <!--Band box-->
                     <div class="band-box">
@@ -153,12 +138,12 @@
                         </div> -->
                         </div>
                         <div class="input-box">
-                            <legend class="edit-legend">Band Member list (along with the instruments they play)* :
+                            <legend class="edit-legend">Band Member(s) Name (along with the instruments they play)* :
                             </legend>
                             <textarea id="bio" class="input-field" name="bio" rows="3" cols="30"
                                 placeholder="E.g. Jitendra Roy - Bass"></textarea>
                             <!-- <input type="text" class="input-field" required value placeholder="E.g. Jitendra Roy - Bass*"
-                            name="text"> -->
+                            name="text"> --><br>
                         </div>
                     </div>
 
@@ -199,12 +184,12 @@
                                 placeholder="Enter the instrument's name here" name="text">
                         </div>
                     </div>
-                    <div class="remember-forget input-field yes-no">
+                    <div class="accomodation remember-forget yes-no">
                         <legend>
                             <span>Do you need <b>Accommodation</b>?</span>
                             <span id="anim">
                                 <span class="tooltip"
-                                    data-tooltip="Complimentary accommodation is available for interactive concert participants on a first-come-first-serve basis, depending on proximity to the college. IIEST, Shibpur is easily accessible by bus from key locations in Kolkata, including Sealdah, Howrah, and Esplanade stations."><ion-icon
+                                    data-tooltip="Complimentary accommodation is available for interactive concert participants on a first-come-first-serve basis, depending on proximity to the college. IIESTS (BE College) is easily accessible by bus from key locations in Kolkata, including Sealdah, Howrah, and Esplanade stations."><ion-icon
                                         name="alert-circle-outline"></ion-icon></span>
                             </span>
                         </legend>
